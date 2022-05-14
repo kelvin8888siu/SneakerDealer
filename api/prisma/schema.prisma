@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model User {
+  id          Int      @id @default(autoincrement())
+  name        String   @db.VarChar(255)
+  email       String   @unique @db.VarChar(255)
+  address     String?  
+  username    String?  @unique
+  auth0Id     String   @unique @default("")
+  phone       String?     
+  sneaker     Sneaker[]
+  transaction Transaction[]
+  review      Review[]
+}
+
+model Sneaker {
+  id          Int       @id @default(autoincrement())
+  name        String    @db.VarChar(255)
+  brand       String    @db.VarChar(255)
+  type        String?   @db.VarChar(255)
+  size        String    @db.VarChar(255)
+  price       String    @db.VarChar(255)
+  quantity    Int       @db.Int
+  condition   String    @db.VarChar(255)
+  image       String?   @db.VarChar(255)
+  status      String?   @default("In Progress")
+  location    String?
+  user        User      @relation(fields: [userId], references: [auth0Id], onDelete: Cascade)
+  userId      String    @db.VarChar(255)
+  transaction Transaction[]
+  message     Message[]
+}
+
+model Transaction {
+  id           Int      @id @default(autoincrement())
+  user         User     @relation(fields: [userId], references: [auth0Id])
+  userId       String   @db.VarChar(255)
+  sneaker      Sneaker  @relation(fields: [sneakerId], references: [id], onDelete: Cascade)
+  sneakerId    Int      @db.Int
+  transaction  String   @db.VarChar(255)
+  location     String   @db.VarChar(255)
+}
+
+model Message {
+  id           Int      @id @default(autoincrement())
+  username     String   @db.VarChar(255)
+  message      String
+  sneaker      Sneaker  @relation(fields: [sneakerId], references: [id], onDelete: Cascade)
+  sneakerId    Int      @db.Int
+}
+
+model Review {
+  id          Int       @id @default(autoincrement())
+  user        User      @relation(fields: [userId], references: [auth0Id], onDelete: Cascade)
+  userId      String    @db.VarChar(255)
+  username    String    @db.VarChar(255)
+  rating      Int       @db.Int
+  comments    String    @db.Text
+}
+
+
+
+
