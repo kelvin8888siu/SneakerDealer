@@ -1,0 +1,185 @@
+.contact-seller{
+    background-color: rgba(0, 0, 0, 0.898);
+}
+
+.contact-seller-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-seller-body{
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+}
+
+.pick-up-location{
+    padding-top: 10px;
+}
+
+.contact-seller-sneaker-img{
+    width: 22vw;
+    height: 12vw;
+    padding-top: 15px;
+    position: relative;
+}
+
+.contact-seller-contact-information{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    background-color: rgba(246, 243, 243, 0.928);
+}
+
+
+.user-contact-seller-info{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(176, 174, 174);
+    width: 80vw;
+    height: 40vw;
+    margin-top: 20px;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: white;
+}
+
+.location-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: solid rgb(176, 174, 174);
+    width: 950px;
+    background-color: rgba(246, 243, 243, 0.928);
+}
+
+.location-map{
+    position: relative !important;
+    overflow: visible !important;
+    height: 31vw !important;
+    width: 61vw !important;  
+    background-color: transparent !important;
+}
+
+.comment-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: solid grey;
+}
+
+.comment-form h5{
+    margin-top: 10px;
+}
+
+.contact-seller-sneaker-name, .contact-seller-contact-information, .message-comment{
+    background-color: white;
+}
+
+.comment-form{
+    color: white;
+}
+
+/*
+.profile-info{
+    background-color: rgb(252, 249, 249)
+}
+*/
+
+/*
+.mb-3,.leave-a-message,.message-comment, .comment-form, p, .container, .form-label, h5, .user-info, .user-info-name, .user-img, .user-info-mail, .mail-img, .user-info-phone, .phone-img{
+    background-color: white;
+}
+*/
+
+/*
+.user-info, .user-info-name, .user-img, .user-info-mail, .mail-img, .user-info-phone, .phone-img, .user-info-home, .home-img{
+    background-color: rgb(252, 249, 249)
+}
+*/
+
+.message-row{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    .contact-seller-body{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .user-contact-seller-info{
+        width: 100%;
+        height: 100%;
+        align-items:  center;
+    }
+
+    .contact-seller-sneaker-img{
+        width: 60vw;
+        height: 30vw;
+        position: relative;
+    }
+    
+    .location-info{
+        width: 100%;
+        height: 100%;
+    }
+
+    .location-map{
+        position: relative !important;
+        overflow: visible !important;
+        height: 30vw !important;
+        width: 60vw !important;  
+        margin-bottom: 10px !important;
+        margin-left: 15px !important;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    .contact-seller-body{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .name, .email, .phone, .address {
+        font-size: 2.5vw;
+    }
+
+
+    .user-img, .mail-img, .home-img, .phone-img{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    .user-contact-seller-info{
+        width: 100%;
+        height: 100%;
+        align-items:  center;
+    }
+
+    .contact-seller-sneaker-img{
+        width: 60vw;
+        height: 30vw;
+        position: relative;
+    }
+    
+    .location-info{
+        width: 100%;
+        height: 100%;
+    }
+
+    .location-map{
+        position: relative !important;
+        overflow: visible !important;
+        height: 32vw !important;
+        width: 70vw !important;  
+        margin-bottom: 10px !important;
+    }
+
+}
+
+

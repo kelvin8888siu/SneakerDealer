@@ -1,0 +1,70 @@
+.background-black{
+    padding: 8vw;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px !important;
+}
+
+.login-register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vw !important;
+    height: 40vw;
+    gap: 20px;
+    border: white 2px solid;
+    border-radius: 20px;
+    align-items: center;
+    background-image: url("../image/login-container-img.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home-button, .login-button, .create-account-button{
+    width: 20vw;
+    background-color: rgb(32, 32, 32) !important;
+    font-size: 2vw !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .background-black{
+        padding-top: 65px;
+    }
+
+    .login-register{
+        width: 65vw !important;
+        height: 45vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .background-black{
+        padding-top: 65px;
+    }
+
+    .login-register{
+        width: 75vw !important;
+        height: 55vw;
+    }
+
+    .home-button, .login-button, .create-account-button{
+        font-size: 2.5vw !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .background-black{
+        padding-top: 145px;
+    }
+
+    .login-register{
+        width: 75vw !important;
+        height: 55vw;
+    }
+
+    .home-button, .login-button, .create-account-button{
+        font-size: 3vw !important;
+    }
+}

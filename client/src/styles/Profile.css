@@ -1,0 +1,304 @@
+/*
+.user-profile-transaction, form, .address-form, .profile-form, .table-responsive, thead, tr, th, td, img {
+    background-color: white;
+}
+*/
+
+.user-profile-transaction{
+    background-color: rgba(0, 0, 0, 0.898);
+    height: 170vh;
+}
+
+.datatable-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.edit_icon:hover, .delete_icon:hover, .check_icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.profile{
+    display:flex;
+    justify-items: center;
+    gap: 10px; 
+    color: black;
+}
+
+.profile-info{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.profile-photo{
+    border-radius: 200px;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+}
+
+.profile-tabs{
+    width: 1010px;
+    font-size: 1.2vw;
+    background-color: white;
+}
+
+.user-info{
+    padding: 10px;
+    font-size: 2vw;
+}
+
+.quantity-buttons{
+    display: flex;
+    gap: 8px;
+}
+
+.add, .minus{
+    margin-top: 3px;
+}
+
+.add:hover, .minus:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.user-info-name, .user-info-mail, .user-info-home, .user-info-phone{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 8px;
+    background-color: white;
+}
+
+.user-info-phone{
+    padding-bottom: 20px;
+}
+
+.name, .email, .phone{
+    padding-top: 3px;
+}
+
+.name, .email, .phone, .address {
+    font-size: 1.1vw;
+}
+
+.user-img, .mail-img, .home-img, .phone-img{
+    width: 2vw;
+    height: 2vw;
+}
+
+.home-img{
+    margin-top: 5px;
+}
+
+.tab-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Table buttons*/
+
+/*
+.edit_icon, .check_icon, .delete_icon, .add, .minus, .quantity-buttons, .datatable-actions, .datatable-edit, .datatable-delete{
+    background-color: white;
+    background: white;
+}
+*/
+
+.edit_icon{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.check_icon{
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+.delete_icon{
+    width: 2vw;
+    height: 2vw;
+}
+
+.add, .minus {
+    width: 1.4vw;
+    height: 1.4vw;
+}
+
+::placeholder{
+    font-size: 1vw;
+}
+
+@media (max-width: 992px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-photo{
+        border-radius: 200px;
+        width: 130px;
+        height: 130px;
+        padding: 10px;
+    }
+    
+    .user-img, .mail-img, .home-img, .phone-img{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    .name, .email, .phone, .address {
+        font-size: 1.5vw;
+    }
+
+    .address {
+        margin-top: 7px;
+    }
+
+    .profile-info{
+        width: 100%;
+    }
+    .profile-tabs{
+        width: auto;
+        font-size: 1.3vw;
+    }
+
+    .edit_icon{
+        width: 1.8vw;
+        height: 1.8vw;
+    }
+    
+    .check_icon{
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    .delete_icon{
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+
+    .add, .minus {
+        width: 1.6vw;
+        height: 1.6vw;
+    }
+
+    ::placeholder{
+        font-size: 1.5vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .tab-content{
+        width: 100%;
+    }
+
+    .profile-photo{
+        border-radius: 200px;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+    
+    .user-img, .mail-img, .home-img, .phone-img{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    .address {
+        margin-top: 7px;
+    }
+
+    .profile-info{
+        width: 100%;
+    }
+    .profile-tabs{
+        width: auto;
+        font-size: 1.8vw;
+    }
+
+    .edit_icon{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    
+    .check_icon{
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+    
+    .delete_icon{
+        width: 2.9vw;
+        height: 2.9vw;
+    }
+
+    .add, .minus {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    ::placeholder{
+        font-size: 2vw;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .tab-content{
+        width: 100%;
+    }
+
+    .profile-photo{
+        border-radius: 200px;
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+    }
+
+    .name, .email, .phone, .address {
+        font-size: 2.3vw;
+    }
+
+    .user-img, .mail-img, .home-img, .phone-img{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    .address {
+        margin-top: 7px;
+    }
+
+    .profile-info{
+        width: 100%;
+    }
+
+    .profile-tabs{
+        width: auto;
+        font-size: 2.3vw;
+    }
+
+    .edit_icon{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    
+    .check_icon{
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+    
+    .delete_icon{
+        width: 2.9vw;
+        height: 2.9vw;
+    }
+
+    .add, .minus {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    ::placeholder{
+        font-size: 3vw;
+    }
+  }

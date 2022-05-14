@@ -1,0 +1,25 @@
+.background-blue{
+    background-color: #46C2FF;
+}
+
+.loading-screen{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 300px;
+    gap: 40px;
+    background-color: #46C2FF;
+}
+
+.loading-title{
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.906);
+    font-family: "Comic Sans MS";
+    background-color: #46C2FF;
+}
+
+.spinner{
+   color: white;
+   background-color: #46C2FF;
+}

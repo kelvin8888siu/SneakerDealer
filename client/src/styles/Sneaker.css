@@ -1,0 +1,126 @@
+.sneaker-detail{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.898);
+}
+
+.sneaker-detail-container{
+    padding: 130px;
+}
+
+.detail-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.item{
+    display:flex;
+}
+
+.item, .sneaker-img, .sneaker-info{
+    padding: 25px;
+}
+
+.sneaker-img, .sneaker-info {
+    border: rgb(176, 174, 174) solid;
+}
+
+.sneaker-img{
+    background-color: white;
+}
+
+.sneaker-info{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    background-color: rgba(246, 243, 243, 0.928);
+    
+}
+
+.sneaker-detail-price{
+    color: green;
+}
+
+.img {
+    object-position: 0;
+}
+
+.card-img-top{
+    padding: 15px;
+}
+
+.card-body{
+    background-color: rgb(252, 249, 249);
+}
+
+/*
+h5{
+    background: rgba(246, 243, 243, 0.928);
+}
+
+li{
+    background: rgba(246, 243, 243, 0.928);
+}
+*/
+
+.details-list{
+    padding-left: 18px;
+    padding-bottom: 20px;
+}
+
+/*
+.detail-header, .sneaker-detail-name, .sneaker-detail-price{
+    background: rgba(246, 243, 243, 0.928);
+}
+*/
+
+/*Tablet*/
+@media (max-width: 997px) {
+    .sneaker-detail{
+        height: 110vh;
+    }
+
+    .sneaker-detail-container{
+        padding: 32px;
+    }
+
+    .item{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .item, .sneaker-img, .sneaker-info{
+        padding: 15px;
+    }
+  
+  }
+
+/*Phone*/
+@media (max-width: 400px) {
+    .sneaker-detail-container{
+        padding: 50px;
+    }
+
+    .item, .sneaker-img, .sneaker-info{
+        padding: 15px;
+    }
+    
+    .sneaker-img, .sneaker-info {
+        border: rgb(176, 174, 174) solid;
+    }
+
+    .sneaker-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .detail-header{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }

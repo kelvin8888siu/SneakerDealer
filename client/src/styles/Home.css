@@ -1,0 +1,52 @@
+.home{
+  background: rgba(0, 0, 0, 0.898);
+}
+
+.sneaker-cards:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.price{
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sneaker-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+/*
+.card-title, .card-text, .price{
+  background-color: rgba(252, 249, 249, 0.956);
+}
+*/
+
+@media (max-width: 1000px) {
+  .sneaker-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .sneaker-cards {
+    flex-basis: 90.0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sneaker-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .sneaker-cards {
+    flex-basis: 80.0%;
+  }
+}
+
